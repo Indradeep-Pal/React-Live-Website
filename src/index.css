@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.brand-name{
+  color :rgb(59, 106, 167);
+}
+#btn{
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  color : rgb(76, 140, 201);
+  padding:15px;
+  border : 2px solid rgb(76, 140, 201);
+  background-color: white;
+}
+#btn:hover{
+  background-color :rgb(76, 140, 201);
+  color : white;
+}
+#header{
+  display: flex;
+  margin: 20px 20px;
+  padding:40px 40px;
+ flex-direction: column;
+
+
+}
+.header-img{
+   padding-left:10px;
+}
+#header .animated{
+margin-top: 50px;
+ animation-name: infiniteupdown;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: ease;
+ transition: all .3s;
+}
+@keyframes infiniteupdown{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-30px);
+    transform: translateY(25px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
